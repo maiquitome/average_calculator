@@ -7,14 +7,14 @@
 Compilando todos os	módulos dentro do diretório do projeto:
 
 ```bash
-$	elixirc calculator.ex student.ex subject.ex
+$ elixirc calculator.ex student.ex subject.ex
 ```
 Depois de compilar todos os módulos, alguns arquivos com a extensão	**.beam**	serão	gerados	no diretório. Estes são arquivos de bytecode	que	a	máquina	virtual	vai	executar.
 
 Como todos os módulos estão compilados dentro da mesma pasta, o __IEx__ pode ser chamado dentro	desta	 pasta e ele automaticamente terá	acesso a todos eles.
 
 ```bash
-$	iex
+$ iex
 ```
 
 Vamos então executar o __start principal__ para vermos o resultado. Faremos __Pattern Matching__ do	 resultado para uma variável __result__ com	o	resultado	geral, e __best__ para os	melhores.
@@ -33,16 +33,16 @@ $ iex> {result, best} = Calculator.start()
 ```bash
 $ iex> result
 
-[%{average:	6.55,	first_name:	"João",	last_name:	"Joaquim"},
-%{average:	5.16,	first_name:	"Maria",	last_name:	"Silva"},
-%{average:	4.78,	first_name:	"Pedro",	last_name:	"Pedrada"},
-%{average:	4.61,	first_name:	"Kauã",	last_name:	"Camboinhas"}]
+[%{average:	6.55, first_name: "João", last_name: "Joaquim"},
+%{average: 5.16, first_name: "Maria", last_name: "Silva"},
+%{average: 4.78, first_name: "Pedro", last_name: "Pedrada"},
+%{average: 4.61, first_name: "Kauã", last_name: "Camboinhas"}]
 ```
 
 ```bash
 $ iex> best
 
-[%{average:	6.55,	first_name:	"João",	last_name:	"Joaquim"}]
+[%{average: 6.55, first_name: "João", last_name: "Joaquim"}]
 ```
 
 ## 🚀 Tecnologias usadas nesse projeto
