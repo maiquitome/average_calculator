@@ -33,7 +33,7 @@ $ iex> {result, best} = Calculator.start()
 ```bash
 $ iex> result
 
-[%{average:	6.55, first_name: "João", last_name: "Joaquim"},
+[%{average: 6.55, first_name: "João", last_name: "Joaquim"},
 %{average: 5.16, first_name: "Maria", last_name: "Silva"},
 %{average: 4.78, first_name: "Pedro", last_name: "Pedrada"},
 %{average: 4.61, first_name: "Kauã", last_name: "Camboinhas"}]
