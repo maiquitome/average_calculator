@@ -9,6 +9,16 @@ defmodule Calculator do
   def start() do
     joao = %Student{name: "João Joaquim", results: build_subjects([5.2, 3.9, 2.7, 9.8])}
 
+    # %Student{
+    #   name: "João Joaquim",
+    #   results: [
+    #     %Subject{name: "Matemática", result: 9.8},
+    #     %Subject{name: "Português", result: 3.9},
+    #     %Subject{name: "Geografia", result: 9.8},
+    #     %Subject{name: "História", result: 9.8}
+    #   ]
+    # }
+
     maria = %Student{name: "Maria	da	Silva", results: build_subjects([8.4, 7.5, 9.4, 2.8])}
 
     pedro = %Student{name: "Pedro	Pedrada", results: build_subjects([1.3, 8.5, 8.9, 7.6])}
@@ -41,17 +51,28 @@ defmodule Calculator do
   @doc """
   Calculate	the	average	of	a	Student.
   ##	Parameters
-  -	`student`	-	A	Student	struct.
+  -	`student`	-	A	Student	struct:
   """
   defp average(student) do
-    total = Enum.count(student.results)
+    number_of_subjects = Enum.count(student.results)
 
-    result =
+    # iex(2)> joao.results
+    # [
+    #   %Subject{name: "Matemática", result: 9.8},
+    #   %Subject{name: "Português", result: 3.9},
+    #   %Subject{name: "Geografia", result: 9.8},
+    #   %Subject{name: "História", result: 9.8}
+    # ]
+
+    # iex(3)> joao.results |> Enum.map(& &1.result)
+    # [9.8, 3.9, 9.8, 9.8]
+
+    sum_of_grades =
       student.results
       |> Enum.map(& &1.result)
       |> Enum.reduce(&(&1 + &2))
 
-    Float.ceil(result / total, 2)
+    Float.ceil(sum_of_grades / number_of_subjects, 2)
   end
 
   @doc """
