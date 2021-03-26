@@ -1,5 +1,23 @@
 # 🧮 Calculadora de Médias
-### Primeiro projeto do livro: Elixir do zero a concorrência (Casa do Código)
+## Primeiro projeto do livro: Elixir do zero a concorrência (Casa do Código)
+
+O objetivo desta aplicação é bastante simples. Dado que eu
+passe uma lista de estudantes com suas notas, ela deve ser capaz de
+me retornar uma lista dos estudantes com suas médias. Além disso,
+ela também precisa me informar qual foi a melhor média da classe.
+
+A estrutura de um aluno ficou assim:
+```bash
+%Student{
+  name: "João Joaquim",
+  results: [
+    %Subject{name: "Matemática", result: 9.8},
+    %Subject{name: "Português", result: 3.9},
+    %Subject{name: "Geografia", result: 9.8},
+    %Subject{name: "História", result: 9.8}
+  ]
+}
+```
 <br />
 
 ## 💻 Iniciando o Projeto
@@ -23,26 +41,28 @@ Vamos então executar o __start principal__ para vermos o resultado. Faremos __P
 $ iex> {result, best} = Calculator.start()
 
 {[
-   %{average: 5.73, first_name: "João", last_name: "Joaquim"},
-   %{average: 8.2, first_name: "Maria", last_name: "Silva"},
-   %{average: 2.88, first_name: "Pedro", last_name: "Pedrada"},
-   %{average: 3.68, first_name: "Kauã", last_name: "Camboinhas"}
- ], [%{average: 8.2, first_name: "Maria", last_name: "Silva"}]}
+   %{average: 4.78, first_name: "João", last_name: "Joaquim"},
+   %{average: 6.78, first_name: "Maria", last_name: "Silva"},
+   %{average: 6.8, first_name: "Pedro", last_name: "Pedrada"},
+   %{average: 4.48, first_name: "Kauã", last_name: "Camboinhas"}
+ ], [%{average: 6.8, first_name: "Pedro", last_name: "Pedrada"}]}
  ```
 
 ```bash
 $ iex> result
 
-[%{average: 6.55, first_name: "João", last_name: "Joaquim"},
-%{average: 5.16, first_name: "Maria", last_name: "Silva"},
-%{average: 4.78, first_name: "Pedro", last_name: "Pedrada"},
-%{average: 4.61, first_name: "Kauã", last_name: "Camboinhas"}]
+[
+  %{average: 4.78, first_name: "João", last_name: "Joaquim"},
+  %{average: 6.78, first_name: "Maria", last_name: "Silva"},
+  %{average: 6.8, first_name: "Pedro", last_name: "Pedrada"},
+  %{average: 4.48, first_name: "Kauã", last_name: "Camboinhas"}
+]
 ```
 
 ```bash
 $ iex> best
 
-[%{average: 6.55, first_name: "João", last_name: "Joaquim"}]
+[%{average: 6.8, first_name: "Pedro", last_name: "Pedrada"}]
 ```
 
 ## 🚀 Tecnologias usadas nesse projeto
