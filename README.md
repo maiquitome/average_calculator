@@ -1,6 +1,9 @@
 # 🧮 Calculadora de Médias
 ## Primeiro projeto do livro: Elixir do zero a concorrência (Casa do Código)
 
+<a href="https://www.youtube.com/watch?v=ikPlQ4UxP2w&t=291s">Assista a video aula do projeto</a>
+<img src=".github/youtube.png">
+
 O objetivo desta aplicação é bastante simples. Dado que eu
 passe uma lista de estudantes com suas notas, ela deve ser capaz de
 me retornar uma lista dos estudantes com suas médias. Além disso,
