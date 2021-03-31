@@ -10,7 +10,7 @@ me retornar uma lista dos estudantes com suas médias. Além disso,
 ela também precisa me informar qual foi a melhor média da classe.
 
 A estrutura de um aluno ficou assim:
-```bash
+```elixir
 %Student{
   name: "João Joaquim",
   results: [
