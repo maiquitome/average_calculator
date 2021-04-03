@@ -1,8 +1,20 @@
-# 🧮 Calculadora de Médias
-## Primeiro projeto do livro: Elixir do zero a concorrência (Casa do Código)
 
-<a href="https://www.youtube.com/watch?v=ikPlQ4UxP2w&t=291s">Assista a video aula do projeto</a>
-<img src=".github/youtube.png">
+<div align="center">
+  <h1>🧮 Calculadora de Médias 🧮</h1>
+  <h2>
+    Primeiro projeto do livro: Elixir do zero a concorrência (Casa do Código)
+  </h2>
+
+  <br>
+  <img height="200" src=".github/elixir_book.png" alt="elixir book">
+  <br>
+  <br>
+
+  <a href="https://www.youtube.com/watch?v=ikPlQ4UxP2w&t=291s">
+    Assista a video aula do projeto
+    <img src=".github/youtube.png">
+  </a>
+</div>
 
 O objetivo desta aplicação é bastante simples. Dado que eu
 passe uma lista de estudantes com suas notas, ela deve ser capaz de
