@@ -14,6 +14,9 @@
     Assista a video aula do projeto
     <img src=".github/youtube.png">
   </a>
+
+  <br>
+  <br>
 </div>
 
 O objetivo desta aplicação é bastante simples. Dado que eu
